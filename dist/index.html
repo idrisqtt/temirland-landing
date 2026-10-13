@@ -16,12 +16,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Display:wght@600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="language.css">
+  <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
   <header class="nav" id="nav">
     <a class="logo" href="#top" aria-label="TemirLand — на главную"><span>T</span>TemirLand</a>
     <nav aria-label="Основная навигация">
-      <a href="#catalog">Трубы</a><a href="#services">Услуги</a><a href="#contacts">Контакты</a>
+      <a href="#catalog">Трубы</a><a href="#calculator">Калькулятор</a><a href="#services">Услуги</a><a href="#contacts">Контакты</a>
     </nav>
     <div class="nav-actions">
       <div class="lang-switch" role="group" aria-label="Выбор языка"><button type="button" data-lang="ru" class="active">RU</button><span>/</span><button type="button" data-lang="kk">ҚАЗ</button></div>
@@ -72,8 +73,31 @@
       <a class="btn btn-dark reveal" href="https://drive.google.com/file/d/1h922Mizfl0Ku7Ay8OuPYsEEACWe9jCY5/view?usp=sharing" target="_blank" rel="noopener">Открыть прайс-лист <b>↗</b></a>
     </section>
 
+    <section class="calculator section" id="calculator">
+      <div class="calc-heading reveal">
+        <div><div class="section-index">/ 03 — Калькулятор стоимости</div><h2>Рассчитайте<br><em>ваш заказ.</em></h2></div>
+        <p>Выберите позицию из прайс-листа и укажите количество. Расчёт предварительный — наличие, итоговую стоимость и скидку уточнит менеджер.</p>
+      </div>
+      <div class="calc-shell reveal">
+        <div class="calc-controls">
+          <label><span>Категория</span><select id="calc-category"></select></label>
+          <label class="calc-product-field"><span>Продукция</span><input id="calc-search" type="search" placeholder="Найти по диаметру или названию" autocomplete="off"><select id="calc-product" size="7"></select></label>
+          <div class="calc-row"><label><span>Количество</span><input id="calc-quantity" type="number" value="1" min="0.01" step="0.01" inputmode="decimal"></label><label><span>Единица</span><select id="calc-unit"></select></label></div>
+        </div>
+        <aside class="calc-result">
+          <div class="calc-date">Прайс-лист · апрель 2026</div>
+          <small>Предварительная стоимость</small>
+          <output id="calc-total">—</output>
+          <div class="calc-breakdown" id="calc-breakdown">Выберите продукцию</div>
+          <div class="calc-note" id="calc-note"></div>
+          <a class="btn btn-primary" id="calc-whatsapp" href="https://wa.me/77479000955" target="_blank" rel="noopener">Уточнить наличие <b>↗</b></a>
+          <p class="calc-disclaimer">Цены могут измениться. Действует система скидок и индивидуальный расчёт.</p>
+        </aside>
+      </div>
+    </section>
+
     <section class="services section" id="services">
-      <div class="section-index reveal">/ 03 — Подготовка труб</div>
+      <div class="section-index reveal">/ 04 — Подготовка труб</div>
       <div class="services-title"><h2 class="reveal">Не просто продаём.<br><em>Готовим к работе.</em></h2><p class="reveal">Дополнительная обработка помогает сократить время на объекте и продлить срок службы металла.</p></div>
       <div class="service-list">
         <div class="service reveal"><span>01</span><h3>Пескоструйная обработка</h3><p>Очистка поверхности перед нанесением защитного покрытия.</p><i>↗</i></div>
@@ -88,7 +112,7 @@
     <section class="process section">
       <div class="process-photo reveal"><img src="assets/pipe-5.jpg" alt="Склад стальных труб TemirLand" loading="lazy"><div class="photo-label">Склад TemirLand<br>Алматинская область</div></div>
       <div class="process-copy">
-        <div class="section-index reveal">/ 04 — Как заказать</div>
+        <div class="section-index reveal">/ 05 — Как заказать</div>
         <h2 class="reveal">От запроса<br>до отгрузки —<br><em>без лишнего.</em></h2>
         <ol>
           <li class="reveal"><span>01</span><div><b>Отправьте параметры</b><p>Диаметр, длина, объём и назначение трубы.</p></div></li>
@@ -111,6 +135,7 @@
     <div class="footer-bottom"><span>© 2026 TemirLand</span><span>Стальные трубы · Алматы</span><a href="#top">Наверх ↑</a></div>
   </footer>
   <script src="language.js"></script>
+  <script src="calculator.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
