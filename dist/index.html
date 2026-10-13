@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="language.css">
 </head>
 <body>
   <header class="nav" id="nav">
@@ -22,8 +23,11 @@
     <nav aria-label="Основная навигация">
       <a href="#catalog">Трубы</a><a href="#services">Услуги</a><a href="#contacts">Контакты</a>
     </nav>
-    <a class="nav-phone" href="tel:+77479000955">+7 747 900 09 55</a>
-    <button class="menu" aria-label="Открыть меню"><i></i><i></i></button>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Выбор языка"><button type="button" data-lang="ru" class="active">RU</button><span>/</span><button type="button" data-lang="kk">ҚАЗ</button></div>
+      <a class="nav-phone" href="tel:+77479000955">+7 747 900 09 55</a>
+      <button class="menu" aria-label="Открыть меню"><i></i><i></i></button>
+    </div>
   </header>
 
   <main id="top">
@@ -106,6 +110,7 @@
     <div class="footer-grid"><div><small>Офис</small><p>Первомайская нефтебаза, 161/1<br>здание «ДосТау», кабинет 17</p></div><div><small>База</small><p>Промзона, территория 48Д<br>с. Мухаметжан Туймебаев</p></div><div><small>Почта</small><a href="mailto:true_business@mail.ru">true_business@mail.ru</a></div></div>
     <div class="footer-bottom"><span>© 2026 TemirLand</span><span>Стальные трубы · Алматы</span><a href="#top">Наверх ↑</a></div>
   </footer>
+  <script src="language.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
