@@ -21,13 +21,13 @@
 <body>
   <header class="nav" id="nav">
     <a class="logo" href="#top" aria-label="truebusiness — на главную"><span>tb</span>truebusiness</a>
-    <nav aria-label="Основная навигация">
+    <nav id="main-nav" aria-label="Основная навигация">
       <a href="#catalog">Трубы</a><a href="#calculator">Калькулятор</a><a href="#services">Услуги</a><a href="#contacts">Контакты</a>
     </nav>
     <div class="nav-actions">
       <div class="lang-switch" role="group" aria-label="Выбор языка"><button type="button" data-lang="ru" class="active">RU</button><span>/</span><button type="button" data-lang="kk">ҚАЗ</button></div>
       <a class="nav-phone" href="tel:+77479000955">+7 747 900 09 55</a>
-      <button class="menu" aria-label="Открыть меню"><i></i><i></i></button>
+      <button class="menu" aria-label="Открыть меню" aria-controls="main-nav" aria-expanded="false"><i></i><i></i></button>
     </div>
   </header>
 
@@ -40,15 +40,15 @@
         <h1 class="reveal">Стальные трубы.<br><em>Точно под задачу.</em></h1>
         <p class="hero-text reveal">Новые, лежалые и восстановленные трубы разных диаметров. Поможем подобрать, подготовим и оперативно отгрузим.</p>
         <div class="hero-actions reveal">
-          <a class="btn btn-primary" href="https://wa.me/77479000955?text=Здравствуйте!%20Хочу%20уточнить%20наличие%20стальных%20труб" target="_blank" rel="noopener">Узнать наличие <b>↗</b></a>
+          <a class="btn btn-primary" href="https://wa.me/77479000955?text=Здравствуйте!%20Хочу%20уточнить%20наличие%20стальных%20труб" target="_blank" rel="noopener">Узнать наличие</a>
           <a class="btn btn-ghost" href="#catalog">Смотреть ассортимент</a>
         </div>
       </div>
       <div class="hero-note reveal"><strong>01</strong><span>Подбор по диаметру,<br>состоянию и бюджету</span></div>
-      <a class="scroll" href="#catalog">Листайте <span>↓</span></a>
+      <a class="scroll" href="#catalog">Листайте<span aria-hidden="true"></span></a>
     </section>
 
-    <div class="ticker" aria-hidden="true"><div>Новые трубы <i>●</i> Восстановленные <i>●</i> Лежалые <i>●</i> Крупные диаметры <i>●</i> Быстрая отгрузка <i>●</i> Новые трубы <i>●</i> Восстановленные <i>●</i> Лежалые <i>●</i></div></div>
+    <div class="ticker" aria-hidden="true"><div>Новые трубы <i></i> Восстановленные <i></i> Лежалые <i></i> Крупные диаметры <i></i> Быстрая отгрузка <i></i> Новые трубы <i></i> Восстановленные <i></i> Лежалые <i></i></div></div>
 
     <section class="intro section">
       <div class="section-index reveal">/ 01 — О компании</div>
@@ -57,7 +57,7 @@
         <div class="intro-copy reveal">
           <p>truebusiness поставляет стальные трубы для строительных, промышленных и инфраструктурных задач.</p>
           <p>На складе — трубы после демонтажа и хранения, восстановленные и новые позиции. Ассортимент регулярно обновляется.</p>
-          <a class="text-link" href="#contacts">Обсудить ваш проект <span>→</span></a>
+          <a class="text-link" href="#contacts">Обсудить ваш проект</a>
         </div>
       </div>
     </section>
@@ -70,7 +70,7 @@
         <article class="product reveal"><img src="assets/pipe-3.jpg" alt="Лежалые трубы на базе truebusiness" loading="lazy"><div class="product-shade"></div><div class="product-copy"><span>03</span><h3>Лежалые</h3><p>Новые трубы со складского хранения</p></div></article>
         <article class="product reveal"><img src="assets/pipe-4.jpg" alt="Восстановленные стальные трубы" loading="lazy"><div class="product-shade"></div><div class="product-copy"><span>04</span><h3>Восстановленные</h3><p>Проверены и готовы к повторному применению</p></div></article>
       </div>
-      <a class="btn btn-dark reveal" href="https://drive.google.com/file/d/1h922Mizfl0Ku7Ay8OuPYsEEACWe9jCY5/view?usp=sharing" target="_blank" rel="noopener">Открыть прайс-лист <b>↗</b></a>
+      <a class="btn btn-dark reveal" href="https://drive.google.com/file/d/1h922Mizfl0Ku7Ay8OuPYsEEACWe9jCY5/view?usp=sharing" target="_blank" rel="noopener">Открыть прайс-лист</a>
     </section>
 
     <section class="calculator section" id="calculator">
@@ -90,7 +90,7 @@
           <output id="calc-total">—</output>
           <div class="calc-breakdown" id="calc-breakdown">Выберите продукцию</div>
           <div class="calc-note" id="calc-note"></div>
-          <a class="btn btn-primary" id="calc-whatsapp" href="https://wa.me/77479000955" target="_blank" rel="noopener">Уточнить наличие <b>↗</b></a>
+          <a class="btn btn-primary" id="calc-whatsapp" href="https://wa.me/77479000955" target="_blank" rel="noopener">Уточнить наличие</a>
           <p class="calc-disclaimer">Цена за килограмм рассчитывается из стоимости тонны. Цены могут измениться, действует система скидок.</p>
         </aside>
       </div>
@@ -100,12 +100,12 @@
       <div class="section-index reveal">/ 04 — Подготовка труб</div>
       <div class="services-title"><h2 class="reveal">Не просто продаём.<br><em>Готовим к работе.</em></h2><p class="reveal">Дополнительная обработка помогает сократить время на объекте и продлить срок службы металла.</p></div>
       <div class="service-list">
-        <div class="service reveal"><span>01</span><h3>Пескоструйная обработка</h3><p>Очистка поверхности перед нанесением защитного покрытия.</p><i>↗</i></div>
-        <div class="service reveal"><span>02</span><h3>Изоляция ВУС</h3><p>Усиленная защита труб от коррозии и внешней среды.</p><i>↗</i></div>
-        <div class="service reveal"><span>03</span><h3>Покрасочные работы</h3><p>Промышленная окраска металла под условия эксплуатации.</p><i>↗</i></div>
-        <div class="service reveal"><span>04</span><h3>Гидроизоляция</h3><p>Защита коммуникаций от влаги и преждевременного износа.</p><i>↗</i></div>
-        <div class="service reveal"><span>05</span><h3>Пищевая эмаль</h3><p>Безопасное покрытие для труб водоснабжения.</p><i>↗</i></div>
-        <div class="service reveal"><span>06</span><h3>Обрезка труб</h3><p>Точная резка и подготовка в размер для монтажа.</p><i>↗</i></div>
+        <div class="service reveal"><span>01</span><h3>Пескоструйная обработка</h3><p>Очистка поверхности перед нанесением защитного покрытия.</p></div>
+        <div class="service reveal"><span>02</span><h3>Изоляция ВУС</h3><p>Усиленная защита труб от коррозии и внешней среды.</p></div>
+        <div class="service reveal"><span>03</span><h3>Покрасочные работы</h3><p>Промышленная окраска металла под условия эксплуатации.</p></div>
+        <div class="service reveal"><span>04</span><h3>Гидроизоляция</h3><p>Защита коммуникаций от влаги и преждевременного износа.</p></div>
+        <div class="service reveal"><span>05</span><h3>Пищевая эмаль</h3><p>Безопасное покрытие для труб водоснабжения.</p></div>
+        <div class="service reveal"><span>06</span><h3>Обрезка труб</h3><p>Точная резка и подготовка в размер для монтажа.</p></div>
       </div>
     </section>
 
@@ -125,14 +125,14 @@
     <section class="cta section" id="contacts">
       <img src="assets/pipe-6.jpg" alt="Стальные трубы на базе truebusiness" loading="lazy">
       <div class="cta-shade"></div>
-      <div class="cta-copy reveal"><div class="eyebrow"><span></span> Ответим ежедневно с 09:00 до 18:00</div><h2>Нужны трубы?<br><em>Подберём сегодня.</em></h2><a class="btn btn-primary" href="https://wa.me/77479000955?text=Здравствуйте!%20Нужна%20консультация%20по%20стальным%20трубам" target="_blank" rel="noopener">Написать в WhatsApp <b>↗</b></a></div>
+      <div class="cta-copy reveal"><div class="eyebrow"><span></span> Ответим ежедневно с 09:00 до 18:00</div><h2>Нужны трубы?<br><em>Подберём сегодня.</em></h2><a class="btn btn-primary" href="https://wa.me/77479000955?text=Здравствуйте!%20Нужна%20консультация%20по%20стальным%20трубам" target="_blank" rel="noopener">Написать в WhatsApp</a></div>
     </section>
   </main>
 
   <footer>
     <div class="footer-top"><a class="logo" href="#top"><span>tb</span>truebusiness</a><div class="footer-call"><small>Позвонить менеджеру</small><a href="tel:+77479000955">+7 747 900 09 55</a><a href="tel:+77011567773">+7 701 156 77 73</a></div></div>
     <div class="footer-grid"><div><small>Офис</small><p>Первомайская нефтебаза, 161/1<br>здание «ДосТау», кабинет 17</p></div><div><small>База</small><p>Промзона, территория 48Д<br>с. Мухаметжан Туймебаев</p></div><div><small>Почта</small><a href="mailto:true_business@mail.ru">true_business@mail.ru</a></div></div>
-    <div class="footer-bottom"><span>© 2026 truebusiness</span><span>Стальные трубы · Алматы</span><a href="#top">Наверх ↑</a></div>
+    <div class="footer-bottom"><span>© 2026 truebusiness</span><span>Стальные трубы · Алматы</span><a href="#top">Наверх</a></div>
   </footer>
   <script src="language.js"></script>
   <script src="calculator.js"></script>
