@@ -1,4 +1,5 @@
 .nav-actions{justify-self:end;display:flex;align-items:center;gap:28px}.lang-switch{display:flex;align-items:center;gap:7px;font-size:10px;font-weight:700;letter-spacing:.08em}.lang-switch span{color:#686a65}.lang-switch button{appearance:none;border:0;padding:6px 2px;background:transparent;color:#898b85;font:inherit;cursor:pointer;transition:color .2s}.lang-switch button:hover,.lang-switch button.active{color:var(--lime)}
 [lang="kk"] body{font-family:"Noto Sans",Arial,sans-serif}[lang="kk"] h1,[lang="kk"] h2,[lang="kk"] .ticker,[lang="kk"] .product h3,[lang="kk"] .service h3{font-family:"Noto Sans Display",Arial,sans-serif;font-weight:700}[lang="kk"] h1,[lang="kk"] h2{letter-spacing:-.04em}[lang="kk"] .ticker{letter-spacing:.015em}
 @media(max-width:800px){.nav-actions{gap:18px}.lang-switch{font-size:9px}.nav-actions .nav-phone{display:none}}
+.lang-switch span{color:#657178}.lang-switch button{color:#929da2}.lang-switch button:hover,.lang-switch button.active{color:#d6dfe2}
 

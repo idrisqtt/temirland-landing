@@ -1,14 +1,16 @@
-# TemirLand landing page
+# truebusiness landing page
 
-Production-ready статический лендинг компании TemirLand.
+Production-ready статический лендинг компании truebusiness.
 
 ## Локальный запуск
 
 ```bash
-python3 -m http.server 4173 --directory dist
+npm run dev
 ```
 
 Откройте `http://localhost:4173`.
+
+Установка зависимостей не требуется: сайт статический, а локальный сервер запускается через Python 3.
 
 ## Деплой на Vercel
 
