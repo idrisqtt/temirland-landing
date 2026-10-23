@@ -19,3 +19,7 @@ body{background:#10171d;color:#edf0ef}.nav{border-bottom-color:rgba(220,227,230,
 /* Keep the panoramic base photo as the final hero source. */
 .hero-bg{background-image:linear-gradient(90deg,rgba(8,14,18,.96) 0%,rgba(8,14,18,.74) 43%,rgba(8,14,18,.18) 82%),url('assets/hero-yard-ai-20261023.jpg');background-position:center center;filter:saturate(.88) contrast(.98)}
 @media(max-width:640px){.hero-bg{background-position:54% center}}
+
+/* Keep supporting photography monochrome; the hero remains the only color image. */
+.product img,.service-photo img,.process-photo img,.cta>img{filter:grayscale(1) saturate(0) contrast(1.06)}
+.product:hover img,.service-photo:hover img{filter:grayscale(1) saturate(0) contrast(1.1)}
