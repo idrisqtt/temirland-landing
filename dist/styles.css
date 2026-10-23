@@ -23,3 +23,4 @@ body{background:#10171d;color:#edf0ef}.nav{border-bottom-color:rgba(220,227,230,
 /* Keep supporting photography monochrome; the hero remains the only color image. */
 .product img,.service-photo img,.process-photo img,.cta>img{filter:grayscale(1) saturate(0) contrast(1.06)}
 .product:hover img,.service-photo:hover img{filter:grayscale(1) saturate(0) contrast(1.1)}
+.price-downloads{display:flex;flex-wrap:wrap;gap:12px;margin-top:35px}.price-downloads .btn{margin-top:0}@media(max-width:640px){.price-downloads{margin-top:26px}.price-downloads .btn{width:100%}}
